@@ -5,21 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>To-do list</title>
 </head>
 <body>
     <div class="card">
         
-        <h1>To-do list</h1>
+        <header>
+            <h1>To-do list</h1>
+        </header>
         
-        <input type="text" id="taskInput" placeholder="Digite aqui sua tarefa">
-        <button id="add">Adicionar</button>
-        
-        <ul id='tasks'>
-            <li><input type="checkbox">Tarefa 1</li>
-        </ul>
-        
-    </div>
+        <form action="">
+            <input type="text" class='todo-input'>
+            <button class='todo-button' type='submit'>
+                <i class='fas fa-plus-square'></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="filter-todo">
+                    <option value="all">All</option>
+                </select>
+            </div>
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+
+            </ul>
+        </div>
     <script src="script/script.js"></script>
 </body>
 </html>
